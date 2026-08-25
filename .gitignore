@@ -90,4 +90,7 @@ coverage/
 # ==========================================
 # Project specific
 # ==========================================
-# No project-specific ignores yet
+# Avoid committing accidental SSH host-key artifacts or Windows reserved-name files.
+NUL
+known_hosts
+*.ssh_known_hosts
