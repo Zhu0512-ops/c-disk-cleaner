@@ -1,12 +1,14 @@
 ---
 name: "c-disk-cleaner"
 description: "Scans Windows C drive for junk files, caches, and large files; assesses safety and performs cleanup to free disk space. Invoke when user mentions C drive cleanup, freeing space, junk files, temp files, or C drive full."
+platforms: ["TRAE", "Claude", "GPT-4", "Gemini", "DeepSeek", "Any LLM with tool use"]
+version: "1.1.0"
 ---
 
 # C Drive Cleaner / C 盘清理工具
 
-> Scan safely, clean wisely.
-> 安全扫描，明智清理。
+> A universal AI agent skill for safely scanning and cleaning up junk files on Windows C drive.
+> 一个通用的 AI Agent 技能，用于安全扫描和清理 Windows C 盘垃圾文件。
 
 ---
 
@@ -16,9 +18,12 @@ description: "Scans Windows C drive for junk files, caches, and large files; ass
 
 ## Overview / 概述
 
-A TRAE skill that comprehensively scans the Windows C drive for cleanable junk files, cache files, and large files, assesses the safety of each item, provides a clear space usage report, and performs safe cleanup based on user confirmation.
+A universal AI agent skill that comprehensively scans the Windows C drive for cleanable junk files, cache files, and large files, assesses the safety of each item, provides a clear space usage report, and performs safe cleanup based on user confirmation.
 
-一个 TRAE skill，全面扫描 Windows C 盘中可清理的垃圾文件、缓存文件和大文件，评估每项的安全性，提供清晰的空间占用报告，并根据用户确认执行安全清理。
+一个通用的 AI Agent 技能，全面扫描 Windows C 盘中可清理的垃圾文件、缓存文件和大文件，评估每项的安全性，提供清晰的空间占用报告，并根据用户确认执行安全清理。
+
+**Compatible with / 适用于**: TRAE Work, Claude, GPT-4o, Gemini, DeepSeek, and any LLM agent that can execute shell commands.
+**适用于**: TRAE Work、Claude、GPT-4o、Gemini、DeepSeek，以及任何能执行 shell 命令的 LLM Agent。
 
 ---
 
@@ -267,8 +272,23 @@ function Format-Size($bytes) {
 
 ---
 
+## Platform-Specific Notes / 平台特定说明
+
+### TRAE Work
+- Place this file in `.trae/skills/c-disk-cleaner/SKILL.md`
+- 将此文件放在 `.trae/skills/c-disk-cleaner/SKILL.md`
+
+### Claude / GPT-4o / Gemini / Other LLMs
+- Use the full content of this file as a system prompt or custom instruction
+- 将此文件的完整内容用作系统提示词或自定义指令
+- Ensure the model has access to shell/terminal execution capabilities
+- 确保模型具有 shell/终端执行能力
+
+---
+
 ## Version / 版本
 
-- **Version / 版本**: 1.0.0
+- **Version / 版本**: 1.1.0
 - **Author / 作者**: 29429
 - **License / 许可证**: MIT
+- **Repository / 仓库**: https://github.com/Zhu0512-ops/c-disk-cleaner

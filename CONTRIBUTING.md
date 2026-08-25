@@ -109,7 +109,7 @@ Documentation improvements are always welcome! Whether it's fixing typos, adding
 - [ ] I have made corresponding changes to the documentation.
 - [ ] My changes generate no new warnings.
 - [ ] I have tested my changes on a Windows system.
-- [ ] The skill still works correctly after my changes.
+- [ ] the skill/prompt still works correctly after my changes.
 
 ---
 
@@ -118,7 +118,7 @@ Documentation improvements are always welcome! Whether it's fixing typos, adding
 ### SKILL.md Conventions
 
 - Use YAML frontmatter with `name` and `description` fields.
-- The `description` must include both what the skill does AND when to invoke it.
+- The `description` must include both what the skill/prompt does AND when to invoke it.
 - Keep the description under 200 characters.
 - Use bilingual (English + Chinese) structure for all content sections.
 - Code examples use PowerShell syntax highlighting.
@@ -176,4 +176,5 @@ If you're interested in becoming a regular contributor or maintainer, reach out 
 ## Attribution
 
 This guide is based on the **contributing-gen** and open source community standards.
+
 
